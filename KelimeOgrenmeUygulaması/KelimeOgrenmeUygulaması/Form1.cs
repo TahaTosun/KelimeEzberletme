@@ -31,32 +31,9 @@ namespace KelimeOgrenmeUygulaması
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*
-            List<Word> kelimeler = new List<Word>();
-            Word kelime = new Word();
-            Word kelime2 = new Word();
-            
-            kelime.Ingilizce = "Dog";
-            kelime.Turkce = "Köpek";
-            kelime.CumleIng = "Let's take the dog for a walk.";
-            kelime.CumleTr = "Köpeği yürüyüşe çıkaralımaaaaaa.";
-            kelime.KelimeTur = "noun";
-            kelime2.Ingilizce = "Cat";
-            kelime2.Turkce = "Kedi";
-            kelime2.CumleIng = "Let's take the cat for a walk.";
-            kelime2.CumleTr = "Kediyi yürüyüşe çıkaralımaaaaaa.";
-            kelime2.KelimeTur = "noun";
-            kelimeler.Add(kelime);
-            kelimeler.Add(kelime2);
-            int i = 0;
-            while (i < kelimeler.Count)
-            {
-                Word gonder = kelimeler[i];
-                i++;
-                KelimeKarti(gonder);
-            }
-            */
+           
             KelimeleriListele();
+            metroTabControl1.SelectedIndex = 1;
 
         }
 
@@ -605,7 +582,7 @@ namespace KelimeOgrenmeUygulaması
             sayac = 0;
             tabKelimeler.Controls.Clear();
             baglanti.Open();
-            OleDbCommand kmt = new OleDbCommand("SELECT * FROM Kelimeler WHERE  Ingilizce Like '" +txtKelimeAra.Text +"%'", baglanti);
+            OleDbCommand kmt = new OleDbCommand("SELECT * FROM Kelimeler WHERE  Ingilizce Like '" +txtKelimeAra.Text + "%' OR Turkce Like '" + txtKelimeAra.Text + "%'", baglanti);
             OleDbDataReader dr = kmt.ExecuteReader();
             while (dr.Read())
             {              

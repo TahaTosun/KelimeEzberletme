@@ -12,3 +12,17 @@ C:\Users\Taha\source\repos\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj
 C:\Users\Taha\source\repos\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.csproj.CopyComplete
 C:\Users\Taha\source\repos\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.exe
 C:\Users\Taha\source\repos\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.pdb
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\bin\Debug\KelimeOgrenmeUygulaması.exe.config
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\bin\Debug\KelimeOgrenmeUygulaması.exe
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\bin\Debug\KelimeOgrenmeUygulaması.pdb
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\bin\Debug\MetroFramework.Design.dll
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\bin\Debug\MetroFramework.dll
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.csprojAssemblyReference.cache
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.Form1.resources
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.Properties.Resources.resources
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.csproj.GenerateResource.cache
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.csproj.CoreCompileInputs.cache
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.csproj.CopyComplete
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.exe
+C:\Users\Taha\Documents\GitHub\KelimeEzberletme\KelimeOgrenmeUygulaması\KelimeOgrenmeUygulaması\obj\Debug\KelimeOgrenmeUygulaması.pdb
