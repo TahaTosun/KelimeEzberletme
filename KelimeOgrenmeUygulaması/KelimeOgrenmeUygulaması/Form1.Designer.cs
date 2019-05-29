@@ -75,6 +75,7 @@
             this.tabItatistiklerim = new MetroFramework.Controls.MetroTabPage();
             this.lblAranancakKelime = new MetroFramework.Controls.MetroLabel();
             this.txtKelimeAra = new MetroFramework.Controls.MetroTextBox();
+            this.tabOgrendiklerim = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl1.SuspendLayout();
             this.tabKelimeEkle.SuspendLayout();
             this.pnlAra.SuspendLayout();
@@ -83,14 +84,15 @@
             // 
             // metroTabControl1
             // 
-            this.metroTabControl1.Controls.Add(this.tabKelimeEkle);
             this.metroTabControl1.Controls.Add(this.tabKelimeler);
+            this.metroTabControl1.Controls.Add(this.tabKelimeEkle);
             this.metroTabControl1.Controls.Add(this.tabTestEkrani);
+            this.metroTabControl1.Controls.Add(this.tabOgrendiklerim);
             this.metroTabControl1.Controls.Add(this.tabItatistiklerim);
             this.metroTabControl1.Location = new System.Drawing.Point(23, 123);
             this.metroTabControl1.Multiline = true;
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 3;
             this.metroTabControl1.Size = new System.Drawing.Size(1000, 473);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -221,7 +223,7 @@
             this.metroLabel13.AutoSize = true;
             this.metroLabel13.Location = new System.Drawing.Point(19, 37);
             this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(209, 20);
+            this.metroLabel13.Size = new System.Drawing.Size(194, 19);
             this.metroLabel13.TabIndex = 2;
             this.metroLabel13.Text = "Güncellemek İstediğiniz Kelime :";
             this.metroLabel13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -407,7 +409,7 @@
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.Location = new System.Drawing.Point(573, 155);
             this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(112, 20);
+            this.metroLabel9.Size = new System.Drawing.Size(104, 19);
             this.metroLabel9.TabIndex = 25;
             this.metroLabel9.Text = "Kelimenin Türü : ";
             // 
@@ -416,7 +418,7 @@
             this.metroLabel10.AutoSize = true;
             this.metroLabel10.Location = new System.Drawing.Point(584, 252);
             this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(101, 20);
+            this.metroLabel10.Size = new System.Drawing.Size(94, 19);
             this.metroLabel10.TabIndex = 24;
             this.metroLabel10.Text = "Türkçe Cümle :";
             // 
@@ -425,7 +427,7 @@
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.Location = new System.Drawing.Point(575, 184);
             this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(110, 20);
+            this.metroLabel11.Size = new System.Drawing.Size(104, 19);
             this.metroLabel11.TabIndex = 23;
             this.metroLabel11.Text = "İngilizce Cümle :";
             // 
@@ -434,7 +436,7 @@
             this.metroLabel12.AutoSize = true;
             this.metroLabel12.Location = new System.Drawing.Point(545, 87);
             this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(140, 20);
+            this.metroLabel12.Size = new System.Drawing.Size(130, 19);
             this.metroLabel12.TabIndex = 22;
             this.metroLabel12.Text = "Kelimenin İngilizcesi :";
             // 
@@ -446,7 +448,7 @@
             this.lblGuncelle.ForeColor = System.Drawing.Color.Gray;
             this.lblGuncelle.Location = new System.Drawing.Point(669, 28);
             this.lblGuncelle.Name = "lblGuncelle";
-            this.lblGuncelle.Size = new System.Drawing.Size(107, 25);
+            this.lblGuncelle.Size = new System.Drawing.Size(101, 25);
             this.lblGuncelle.TabIndex = 21;
             this.lblGuncelle.Text = "GÜNCELLE";
             this.lblGuncelle.UseCustomForeColor = true;
@@ -456,7 +458,7 @@
             this.metroLabel14.AutoSize = true;
             this.metroLabel14.Location = new System.Drawing.Point(554, 124);
             this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(131, 20);
+            this.metroLabel14.Size = new System.Drawing.Size(120, 19);
             this.metroLabel14.TabIndex = 20;
             this.metroLabel14.Text = "Kelimenin Türkçesi :";
             // 
@@ -649,7 +651,7 @@
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.Location = new System.Drawing.Point(89, 155);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(112, 20);
+            this.metroLabel5.Size = new System.Drawing.Size(104, 19);
             this.metroLabel5.TabIndex = 11;
             this.metroLabel5.Text = "Kelimenin Türü : ";
             // 
@@ -658,7 +660,7 @@
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.Location = new System.Drawing.Point(100, 252);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(101, 20);
+            this.metroLabel4.Size = new System.Drawing.Size(94, 19);
             this.metroLabel4.TabIndex = 10;
             this.metroLabel4.Text = "Türkçe Cümle :";
             // 
@@ -667,7 +669,7 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.Location = new System.Drawing.Point(91, 184);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(110, 20);
+            this.metroLabel3.Size = new System.Drawing.Size(104, 19);
             this.metroLabel3.TabIndex = 9;
             this.metroLabel3.Text = "İngilizce Cümle :";
             // 
@@ -676,7 +678,7 @@
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.Location = new System.Drawing.Point(61, 87);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(140, 20);
+            this.metroLabel2.Size = new System.Drawing.Size(130, 19);
             this.metroLabel2.TabIndex = 8;
             this.metroLabel2.Text = "Kelimenin İngilizcesi :";
             // 
@@ -688,7 +690,7 @@
             this.metroLabel1.ForeColor = System.Drawing.Color.Gray;
             this.metroLabel1.Location = new System.Drawing.Point(146, 28);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(173, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(168, 25);
             this.metroLabel1.TabIndex = 7;
             this.metroLabel1.Text = "YENİ KELİME EKLE";
             this.metroLabel1.UseCustomForeColor = true;
@@ -698,7 +700,7 @@
             this.lblTurkceKelime.AutoSize = true;
             this.lblTurkceKelime.Location = new System.Drawing.Point(70, 124);
             this.lblTurkceKelime.Name = "lblTurkceKelime";
-            this.lblTurkceKelime.Size = new System.Drawing.Size(131, 20);
+            this.lblTurkceKelime.Size = new System.Drawing.Size(120, 19);
             this.lblTurkceKelime.TabIndex = 6;
             this.lblTurkceKelime.Text = "Kelimenin Türkçesi :";
             // 
@@ -710,9 +712,9 @@
             this.tabKelimeler.HorizontalScrollbarBarColor = true;
             this.tabKelimeler.HorizontalScrollbarHighlightOnWheel = false;
             this.tabKelimeler.HorizontalScrollbarSize = 10;
-            this.tabKelimeler.Location = new System.Drawing.Point(4, 39);
+            this.tabKelimeler.Location = new System.Drawing.Point(4, 38);
             this.tabKelimeler.Name = "tabKelimeler";
-            this.tabKelimeler.Size = new System.Drawing.Size(992, 430);
+            this.tabKelimeler.Size = new System.Drawing.Size(992, 431);
             this.tabKelimeler.TabIndex = 1;
             this.tabKelimeler.Text = "Kelimeler     ";
             this.tabKelimeler.VerticalScrollbar = true;
@@ -827,7 +829,7 @@
             this.lblTestKelime.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.lblTestKelime.Location = new System.Drawing.Point(432, 57);
             this.lblTestKelime.Name = "lblTestKelime";
-            this.lblTestKelime.Size = new System.Drawing.Size(50, 25);
+            this.lblTestKelime.Size = new System.Drawing.Size(47, 25);
             this.lblTestKelime.TabIndex = 2;
             this.lblTestKelime.Tag = "Köpek";
             this.lblTestKelime.Text = "Dog";
@@ -837,11 +839,11 @@
             this.tabItatistiklerim.HorizontalScrollbarBarColor = true;
             this.tabItatistiklerim.HorizontalScrollbarHighlightOnWheel = false;
             this.tabItatistiklerim.HorizontalScrollbarSize = 10;
-            this.tabItatistiklerim.Location = new System.Drawing.Point(4, 39);
+            this.tabItatistiklerim.Location = new System.Drawing.Point(4, 38);
             this.tabItatistiklerim.Name = "tabItatistiklerim";
-            this.tabItatistiklerim.Size = new System.Drawing.Size(992, 430);
+            this.tabItatistiklerim.Size = new System.Drawing.Size(992, 431);
             this.tabItatistiklerim.TabIndex = 3;
-            this.tabItatistiklerim.Text = "İstatistiklerim";
+            this.tabItatistiklerim.Text = "İstatistiklerim     ";
             this.tabItatistiklerim.VerticalScrollbarBarColor = true;
             this.tabItatistiklerim.VerticalScrollbarHighlightOnWheel = false;
             this.tabItatistiklerim.VerticalScrollbarSize = 10;
@@ -851,7 +853,7 @@
             this.lblAranancakKelime.AutoSize = true;
             this.lblAranancakKelime.Location = new System.Drawing.Point(749, 100);
             this.lblAranancakKelime.Name = "lblAranancakKelime";
-            this.lblAranancakKelime.Size = new System.Drawing.Size(115, 20);
+            this.lblAranancakKelime.Size = new System.Drawing.Size(109, 19);
             this.lblAranancakKelime.TabIndex = 1;
             this.lblAranancakKelime.Text = "Aranacak Kelime:";
             // 
@@ -885,6 +887,23 @@
             this.txtKelimeAra.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtKelimeAra.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txtKelimeAra.TextChanged += new System.EventHandler(this.txtKelimeAra_TextChanged);
+            // 
+            // tabOgrendiklerim
+            // 
+            this.tabOgrendiklerim.AutoScroll = true;
+            this.tabOgrendiklerim.HorizontalScrollbar = true;
+            this.tabOgrendiklerim.HorizontalScrollbarBarColor = true;
+            this.tabOgrendiklerim.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabOgrendiklerim.HorizontalScrollbarSize = 10;
+            this.tabOgrendiklerim.Location = new System.Drawing.Point(4, 38);
+            this.tabOgrendiklerim.Name = "tabOgrendiklerim";
+            this.tabOgrendiklerim.Size = new System.Drawing.Size(992, 431);
+            this.tabOgrendiklerim.TabIndex = 4;
+            this.tabOgrendiklerim.Text = "Öğrendiklerim    ";
+            this.tabOgrendiklerim.VerticalScrollbar = true;
+            this.tabOgrendiklerim.VerticalScrollbarBarColor = true;
+            this.tabOgrendiklerim.VerticalScrollbarHighlightOnWheel = false;
+            this.tabOgrendiklerim.VerticalScrollbarSize = 10;
             // 
             // Form1
             // 
@@ -957,6 +976,7 @@
         private MetroFramework.Controls.MetroLabel lblSoruSayısı;
         private MetroFramework.Controls.MetroLabel lblAranancakKelime;
         private MetroFramework.Controls.MetroTextBox txtKelimeAra;
+        private MetroFramework.Controls.MetroTabPage tabOgrendiklerim;
     }
 }
 

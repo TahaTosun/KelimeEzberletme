@@ -33,11 +33,12 @@ namespace KelimeOgrenmeUygulaması
         {
            
             KelimeleriListele();
-            metroTabControl1.SelectedIndex = 1;
+            OgrendigimKelimerleriListele();
+            metroTabControl1.SelectedIndex = 0;
 
         }
 
-        public void KelimeKarti(Word kelime)
+        public void KelimeKarti(Word kelime , bool isOgrendigimKelime)
         {
             Panel panel = new Panel();
             panel.Location = new Point(x,y);
@@ -128,12 +129,21 @@ namespace KelimeOgrenmeUygulaması
             button.Name = kelime.Ingilizce;
             button.Click += new System.EventHandler(KelimeKartındakiButton_Click);
 
-            panel.Controls.Add(button);
             panel.Controls.Add(kelimeLabel);
             panel.Controls.Add(kelimeTur);
             panel.Controls.Add(lblCumleing);
             panel.Controls.Add(lblCumleTr);
-            tabKelimeler.Controls.Add(panel);
+
+            if (isOgrendigimKelime)
+            {
+                tabOgrendiklerim.Controls.Add(panel);
+            }
+            else
+            {
+                panel.Controls.Add(button);
+                tabKelimeler.Controls.Add(panel);
+            }
+            
             
             x += 245;
             sayac++;
@@ -223,9 +233,36 @@ namespace KelimeOgrenmeUygulaması
                 kelime.CumleTr = dr["TrCumle"].ToString();
                 kelime.KelimeTur = dr["KelimeTur"].ToString();
 
-                KelimeKarti(kelime);
+                KelimeKarti(kelime,false);
 
                 RastgeleCevaplar.Add(dr["Turkce"].ToString());//Test Ekranında kullanılacak yanlış cevaplar
+            }
+            baglanti.Close();
+        }
+        
+        public void OgrendigimKelimerleriListele()
+        {
+             x = 10;//Oluşturulacak panellerin x kordinatı
+             y = 20;//Oluşturulacak panellerin y kordinatı
+            
+            sayac = 0;
+
+            baglanti.Open();
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM Test ", baglanti);
+            OleDbDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Word kelime = new Word();
+                kelime.Ingilizce = dr["Ingilizce"].ToString();
+                kelime.Turkce = dr["Turkce"].ToString();
+                kelime.CumleIng = dr["IngCumle"].ToString();
+                kelime.CumleTr = dr["TrCumle"].ToString();
+                kelime.KelimeTur = dr["KelimeTuru"].ToString();
+
+                if(Convert.ToInt16(dr["KacinciTest"])==5)
+                    KelimeKarti(kelime,true);
+
+                
             }
             baglanti.Close();
         }
@@ -594,7 +631,7 @@ namespace KelimeOgrenmeUygulaması
                 kelime.CumleTr = dr["TrCumle"].ToString();
                 kelime.KelimeTur = dr["KelimeTur"].ToString();
 
-                KelimeKarti(kelime);
+                KelimeKarti(kelime,false);
                 
             }
             baglanti.Close();
