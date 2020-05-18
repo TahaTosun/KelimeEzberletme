@@ -1,2 +1,2 @@
 # KelimeEzberletme
-C# ile yazılmış ingilizce kelime ezberletme programı
+Daha önceden belirlediğiniz ingilizce kelimeleri belirli aralıklarla size hatırlatarak kelimeyi öğrenmenize yardımcı uygulama.
